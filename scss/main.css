@@ -1,6 +1,63 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Namdhinggo:wght@400;500;600;700;800&display=swap");
+aside {
+  background-color: rgba(0, 0, 0, 0.904);
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 30px;
+  background-image: url("https://s2-techtudo.glbimg.com/Itc9540Tv8kbCNgWJsmeesr1z1o=/0x0:1920x1038/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/A/r/2NmeIJTL6bUyhog0hBQQ/imagem-1-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: relative;
+}
+aside::before {
+  content: "";
+  position: absolute;
+  /* Posiciona o pseudo-elemento absolutamente em relação ao elemento pai */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.884);
+  /* Cor de fundo semi-transparente (aqui, um preto com 50% de opacidade) */
+  z-index: -1;
+  /* Coloca o pseudo-elemento atrás do conteúdo do body */
+}
+aside .subtitulo {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+aside .container {
+  max-width: 700px;
+  margin: auto;
+  padding: 0px 20px;
+}
+aside .container .trailer {
+  position: relative;
+  padding-bottom: 56.25%; /* Ajuste conforme necessário para a proporção do seu vídeo */
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+}
+aside .container .trailer:hover {
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+aside .container .trailer .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -10,31 +67,34 @@
 html {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
+  scroll-margin-top: 30px;
 }
 
-body {
-  position: relative; /* Garante que o pseudo-elemento seja posicionado em relação a este elemento */
+main {
+  background-color: pink;
+  position: relative;
+  /* Garante que o pseudo-elemento seja posicionado em relação a este elemento */
   background-image: url("../img/chihiro/bg-img-reduce.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  height: 100%;
+  z-index: 1;
 }
-
-body::before {
+main::before {
   content: "";
-  position: absolute; /* Posiciona o pseudo-elemento absolutamente em relação ao elemento pai */
+  position: absolute;
+  /* Posiciona o pseudo-elemento absolutamente em relação ao elemento pai */
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente (aqui, um preto com 50% de opacidade) */
-  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do body */
-}
-
-main {
-  min-height: 100%;
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Cor de fundo semi-transparente (aqui, um preto com 50% de opacidade) */
+  z-index: -1;
+  /* Coloca o pseudo-elemento atrás do conteúdo do body */
 }
 
 header {
@@ -49,7 +109,7 @@ header .changeLang {
   display: flex;
   justify-content: space-around;
   font-weight: 500;
-  width: 150px;
+  width: 200px;
   align-items: center;
   color: white;
 }
@@ -157,6 +217,7 @@ header nav img:hover {
   font-weight: bold;
   font-size: 1.2rem;
   border: 1px solid white;
+  color: white;
   border-radius: 10px;
   transition: all 0.5s ease;
   transform: scaleX(0.9);
@@ -206,6 +267,9 @@ header nav img:hover {
 @media only screen and (max-width: 800px) {
   html {
     height: auto;
+  }
+  body {
+    height: 100%;
   }
   header {
     flex-direction: column;

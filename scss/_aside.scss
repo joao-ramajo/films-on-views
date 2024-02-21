@@ -1,0 +1,76 @@
+aside{
+    background-color: rgba(0, 0, 0, 0.904);
+    width: 100%;
+    min-height: 100vh;
+    
+    padding-top: 30px;
+    background-image: url('https://s2-techtudo.glbimg.com/Itc9540Tv8kbCNgWJsmeesr1z1o=/0x0:1920x1038/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/A/r/2NmeIJTL6bUyhog0hBQQ/imagem-1-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        /* Posiciona o pseudo-elemento absolutamente em relação ao elemento pai */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.884);
+        /* Cor de fundo semi-transparente (aqui, um preto com 50% de opacidade) */
+        z-index: -1;
+        /* Coloca o pseudo-elemento atrás do conteúdo do body */
+    }
+
+    .subtitulo{
+        text-align: center;
+        font-family: $font--family;
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .container{
+        max-width: 700px;
+        margin: auto;
+        padding: 0px 20px;
+        
+        .trailer{
+            // background-color: rgba(0, 0, 255, 0.479);
+            // max-width: 600px;
+            // height: 400px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // margin: auto;
+       
+            position: relative;
+            padding-bottom: 56.25%; /* Ajuste conforme necessário para a proporção do seu vídeo */
+            height: 0;
+            overflow: hidden;
+            transition: all .5s ease;
+            border-radius: 20px;
+
+            &:hover{
+                box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            }
+            
+
+            .video
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                
+                
+            }
+        }
+    }
+    
+}

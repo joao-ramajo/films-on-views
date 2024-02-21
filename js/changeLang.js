@@ -13,7 +13,7 @@ const elements=[
 
 
 const dataPT = {
-    autor : 'HAYAO MIYAZAKI',
+    autor : '<a href="https://pt.wikipedia.org/wiki/Hayao_Miyazaki">HAYAO MIYAZAKI</a>',
     titulo : 'A VIAGEM DE CHIHIRO',
     paragrafo : 'Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.',
     btn1 : 'Assistir agora',
@@ -33,7 +33,7 @@ ptBR.addEventListener('click', ()=>{
 })
 
 const dataEN ={
-    autor: 'HAYAO MIYAZAKI',
+    autor: '<a href="https://en.wikipedia.org/wiki/Hayao_Miyazaki">HAYAO MIYAZAKI</a>',
     titulo: 'SPIRITED AWAY',
     paragrafo: 'Chihiro arrives in a magical world ruled by a witch. Those who disobey are turned into animals.',
     btn1: 'Watch Now',
@@ -53,7 +53,7 @@ enUS.addEventListener('click', ()=>{
 })
 
 const dataJP = {
-    autor: '宮崎駿',
+    autor: '<a href="https://en.wikipedia.org/wiki/Hayao_Miyazaki">宮崎駿</a>',
     titulo: '千と千尋の神隠し',
     paragrafo: '千尋は魔法の世界に到着し、魔女に支配されています。服従しない者は動物に変えられます。',
     btn1: '今すぐ視聴',

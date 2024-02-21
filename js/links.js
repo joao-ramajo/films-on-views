@@ -5,7 +5,7 @@ go_to_film.addEventListener('click', ()=>{
     window.open(url, '_blank');
 })
 
-go_to_trailer.addEventListener('click', ()=>{
-    var url = 'https://www.youtube.com/watch?v=70NhEBzLKU8';
-    window.open(url, '_blank');
-})
+// go_to_trailer.addEventListener('click', ()=>{
+//     var url = 'https://www.youtube.com/watch?v=70NhEBzLKU8';
+//     window.open('#trailer');
+// })
