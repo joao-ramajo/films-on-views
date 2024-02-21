@@ -58,7 +58,13 @@ header
         align-items: center;
         width: 200px;
         height: 100%;
-        transform: scale(1.2);
+        transform: scale(1.3);
+        transition: all .5s ease;
+        &:hover{
+            cursor: pointer;
+            // transform: scale(1.1);
+            filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+        }
     }
     nav
     {
@@ -79,8 +85,12 @@ header
         }
 
         img{
+            transition: all .5s ease;
             &:hover{
                 cursor: pointer;
+                transform: scale(1.05);
+                filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+                
             }
         }
     }
@@ -147,13 +157,17 @@ header
                 font-weight: bold;
                 font-size: 1.2rem;
                 border: 1px solid white;
+                border-radius: 10px;
                 transition: all .5s ease;
-
+                transform: scaleX(0.9);
                 &:hover{
                     cursor: pointer;
-                    border: 1px solid black;
+                    // border: 1px solid black;
                     background-color: white;
                     color: black;
+                    transform: translate(2px, -2px);
+                    transform: scaleX(1);
+                    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.685);
                 }
             }
         }
@@ -165,9 +179,16 @@ header
         display: flex;
         justify-content: center;
         align-items: center;
+      
         img{
             width: 80%;
-            animation: ghost 2.5s linear infinite;
+            animation: ghost 3.5s linear infinite;
+            transition: all .5s ease;
+            opacity: 0.5;
+            &:hover{
+                filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+                opacity: 0.9;
+            }
         }
     }
 }
@@ -176,23 +197,24 @@ header
 
 @keyframes ghost{
     0%{
-        transform: translateY(10px);
+        transform: translateY(10px) rotate(0deg) scale(1.01, 0.99);
+        
     }
 
     25%{
-        transform: translateY(0px);
+        transform: translateY(0px) rotate(1deg) ;
     }
 
     50%{
-        transform: translateY(-10px);
+        transform: translateY(-10px) rotate(0deg) scale(1, 0.99);
     }
 
     75%{
-        transform: translateY(0px) ;
+        transform: translateY(0px) rotate(-1deg) ;
     }
 
     100%{
-        transform: translateY(10px);
+        transform: translateY(10px) rotate(0deg) scale(1.01, 0.99);
     }
 }
 
