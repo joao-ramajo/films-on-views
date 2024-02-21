@@ -279,6 +279,7 @@ header nav img:hover {
   }
   header .logo {
     height: 30%;
+    padding-top: 10px;
   }
   header .changeLang {
     height: 30%;
