@@ -199,6 +199,22 @@ header nav img:hover {
   html {
     height: auto;
   }
+  header {
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo {
+    height: 30%;
+  }
+  header .changeLang {
+    height: 30%;
+    margin: 20px 0px;
+  }
+  header nav {
+    height: 20%;
+  }
   .content {
     margin-top: 40px;
     flex-direction: column;

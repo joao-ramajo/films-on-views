@@ -252,6 +252,29 @@ header
     html{
         height: auto;
     }
+
+    header {
+        .logo{
+            // background-color: red;
+            height: 30%;
+        }
+
+        flex-direction: column;
+        min-height: 200px;
+        justify-content: center;
+        align-items: center;
+
+        .changeLang{
+            // background-color: blue;
+            height: 30%;
+            margin: 20px 0px;
+        }
+
+        nav{
+            // background-color: pink;
+            height: 20%;
+        }
+    }
     .content{
         // background-color: red;
 
