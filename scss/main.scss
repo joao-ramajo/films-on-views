@@ -50,6 +50,33 @@ header
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 10px 0px 10px;
+
+    .changeLang{
+        // background-color: white;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 500;
+        width: 150px;
+        align-items: center;
+        color: white;
+        // opacity: 0.8;
+        
+        .lang{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .selected{
+
+            opacity: 1;
+            font-weight: 600;
+            color: white;
+            text-shadow: 0px 0px 4px white;
+        }
+    }
+
+    
     .logo
     {
         // background-color: red;
@@ -130,6 +157,7 @@ header
             margin-bottom: 20px;
             font-family: $font--title;
             font-weight: 700;
+            min-height: 120px;
         }
 
         .info__body{

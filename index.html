@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FilmsOnSerie</title>
+    <title>Spirited Away    </title>
     <link rel="stylesheet" href="scss/main.css">
+    <link rel="shortcut icon" href="img/favicon-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
     <main>
@@ -14,6 +15,13 @@
                     <img src="img/chihiro/logo2.67eff2ee5e4c682bcb68aec54fca29a4.svg" alt="">
                 </div>
             </a>
+            <div class="changeLang">
+                <span id="langPt" class="selected lang">pt-BR</span>
+                <span>|</span>
+                <span id="langEn" class="lang">en-US</span>
+                <span>|</span>
+                <span id="langJP" class="lang">ja-JP</span>
+            </div>
             <nav>
                 <ul>
                     <a href="https://www.facebook.com/GhibliUSA/?locale=pt_BR">
@@ -31,11 +39,11 @@
         <div class="content">
             <div class="info">
                 <div class="info__header">
-                    <h2>HAYAO MIYAZAKI</h2>
+                    <h2 id="autor">HAYAO MIYAZAKI</h2>
                 </div>
-                <h1>A VIAGEM DE CHIHIRO</h1>
+                <h1 id="titulo">A VIAGEM DE CHIHIRO</h1>
                 <div class="info__body">
-                    <p>Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
+                    <p id="paragrafo">Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
                 </div>
                 <div class="info__bottom">
                     <div class="btn" id="a1">Assistir agora</div>
@@ -61,5 +69,6 @@
             window.open(url, '_blank');
         })
     </script>
+    <script src="js/changeLang.js"></script>
 </body>
 </html>
