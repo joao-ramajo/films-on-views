@@ -16,21 +16,21 @@
                 </div>
           
             <div class="changeLang">
-                <span id="langPt" class="selected lang">pt-BR</span>
+                <span id="langPt" class="selected lang" title="Mudar idioma para portugues">pt-BR</span>
                 <span>|</span>
-                <span id="langEn" class="lang">en-US</span>
+                <span id="langEn" class="lang" title="Change lang to english">en-US</span>
                 <span>|</span>
-                <span id="langJP" class="lang">ja-JP</span>
+                <span id="langJP" class="lang" title="言語を日本語に変更します">ja-JP</span>
             </div>
             <nav>
                 <ul>
-                    <a href="https://www.facebook.com/GhibliUSA/?locale=pt_BR">
+                    <a href="https://www.facebook.com/GhibliUSA/?locale=pt_BR" target="_blank">
                         <li><img src="img/facebook.54de275e44c17c0f1079d14790d3be3f.svg" alt="Logo facebook" title="Ir para o facebook"></li>
                     </a>
-                    <a href="https://www.instagram.com/ghibliusa/">
+                    <a href="https://www.instagram.com/ghibliusa/" target="_blank">
                         <li><img src="img/instagram.0944204cd0359ce0614734566b9b5df5.svg" alt="Logo instagram" title="Ir para o instagram"></li>
                     </a>
-                    <a href="https://twitter.com/GhibliBrasil">
+                    <a href="https://twitter.com/GhibliBrasil" target="_blank">
                         <li><img src="img/twitter.1bb49dd5c300cbf2cdc49a39b756df29.svg" alt="Logo twitter" title="Ir para o twitter"></li>
                     </a>
                 </ul>
@@ -39,7 +39,7 @@
         <div class="content">
             <div class="info">
                 <div class="info__header">
-                    <h2 id="autor">HAYAO MIYAZAKI</h2>
+                    <h2 id="autor"><a href="https://pt.wikipedia.org/wiki/Hayao_Miyazaki" >HAYAO MIYAZAKI</a></h2>
                 </div>
                 <h1 id="titulo">A VIAGEM DE CHIHIRO</h1>
                 <div class="info__body">
@@ -55,20 +55,9 @@
             </div>
         </div>
     </main>
-   
-    <script>
-        const go_to_film = document.getElementById('a1')
-        const go_to_trailer = document.getElementById('a2')
-        go_to_film.addEventListener('click', ()=>{
-            var url = 'https://www.netflix.com/br/title/60023642';
-            window.open(url, '_blank');
-        })
 
-        go_to_trailer.addEventListener('click', ()=>{
-            var url = 'https://www.youtube.com/watch?v=70NhEBzLKU8';
-            window.open(url, '_blank');
-        })
-    </script>
+   
+    <script src="js/links.js"></script>
     <script src="js/changeLang.js"></script>
 </body>
 </html>

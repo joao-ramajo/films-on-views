@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
 }
 
 body::before {
@@ -33,7 +33,7 @@ body::before {
 }
 
 main {
-  min-height: 90vh;
+  min-height: 100%;
   z-index: 1;
 }
 
@@ -53,7 +53,7 @@ header .changeLang {
   align-items: center;
   color: white;
 }
-header .changeLang .lang:hover {
+header .changeLang:hover {
   cursor: pointer;
 }
 header .changeLang .selected {
@@ -120,6 +120,14 @@ header nav img:hover {
 .content .info .info__header h2 {
   font-size: 1.5rem;
   font-weight: 500;
+}
+.content .info .info__header h2 a {
+  transition: all 0.5s ease;
+  color: white;
+  text-decoration: none;
+}
+.content .info .info__header h2 a:hover {
+  text-shadow: 0px 0px 2px white;
 }
 .content .info h1 {
   font-size: 3.5rem;
