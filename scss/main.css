@@ -1,7 +1,10 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Namdhinggo:wght@400;500;600;700;800&display=swap");
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -76,15 +79,25 @@ header nav img:hover {
 .content .info {
   width: 40%;
 }
+.content .info .info__header, .content .info .info__body, .content .info h1 {
+  padding-left: 20px;
+}
 .content .info .info__header {
-  height: 13%;
+  height: 10%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  margin-bottom: 5px;
 }
 .content .info .info__header h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .content .info h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
+  font-family: "Namdhinggo", serif;
+  font-weight: 700;
 }
 .content .info .info__body {
   height: 30%;
@@ -144,6 +157,9 @@ header nav img:hover {
   }
 }
 @media only screen and (max-width: 800px) {
+  html {
+    height: auto;
+  }
   .content {
     margin-top: 40px;
     flex-direction: column;
@@ -151,9 +167,13 @@ header nav img:hover {
     align-items: center;
   }
   .content .info {
-    width: 80%;
+    width: 100%;
   }
   .content .info .info__bottom {
     margin-top: 30px;
+  }
+  .content .info .info__bottom .btn {
+    width: 45%;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

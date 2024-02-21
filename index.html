@@ -32,8 +32,8 @@
                     <p>Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
                 </div>
                 <div class="info__bottom">
-                    <div class="btn">Assistir agora</div>
-                    <div class="btn">Assista o trailer</div>
+                    <div class="btn" id="a1">Assistir agora</div>
+                    <div class="btn" id="a2">Assista o trailer</div>
                 </div>
             </div>
             <div class="thumbnail">
@@ -42,5 +42,18 @@
         </div>
     </main>
    
+    <script>
+        const go_to_film = document.getElementById('a1')
+        const go_to_trailer = document.getElementById('a2')
+        go_to_film.addEventListener('click', ()=>{
+            var url = 'https://www.netflix.com/br/title/60023642';
+            window.open(url, '_blank');
+        })
+
+        go_to_trailer.addEventListener('click', ()=>{
+            var url = 'https://www.youtube.com/watch?v=70NhEBzLKU8';
+            window.open(url, '_blank');
+        })
+    </script>
 </body>
 </html>
