@@ -54,8 +54,8 @@
                     
                 </div>
                 <div class="audioContainer">
-                    <audio id="audio" class="controlAudio" autoplay volume="0" controls>
-                        <source  src="./audio/spiritaway.mp3" type="audio/mp3">
+                    <audio id="audio" class="controlAudio" autoplay controls>
+                        <source  src="audio/spiritaway.mp3" type="audio/mp3">
                         <!-- Fallback para navegadores que não suportam a tag audio -->
                         Seu navegador não suporta a tag de áudio.
                     </audio>
@@ -76,20 +76,37 @@
         </div>
     </aside>
 
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    var meuAudio = document.getElementById('audio');
+
+    // Exibir um alerta pedindo permissão ao usuário
+    var permissao = window.confirm('Deseja permitir a reprodução automática de áudio?');
+
+    if (permissao) {
+        // O usuário permitiu a reprodução automática
+        meuAudio.play().then(() => {
+            console.log('Reprodução bem-sucedida após permissão do usuário.');
+        }).catch((error) => {
+            console.error('Erro ao reproduzir áudio:', error);
+        });
+    } else {
+        // O usuário recusou a reprodução automática
+        console.log('O usuário recusou a reprodução automática.');
+
+        // Ocultar ou desativar o controle de áudio, pois o usuário recusou a reprodução automática
+        meuAudio.controls = false;
+    }
+});
+    </script> -->
     <script>
        var meuAudio = document.getElementById('audio');
 
         document.addEventListener('DOMContentLoaded', () => {
             meuAudio.volume = 0.05;
 
-            // Tente reproduzir o áudio diretamente
-            meuAudio.play().then(() => {
-                // A reprodução foi bem-sucedida
-            }).catch((error) => {
-                // A reprodução foi bloqueada (pode exigir interação do usuário)
-                console.error('Erro ao reproduzir áudio:', error);
-            });
         });
+
 
     </script>
     <script src="js/links.js"></script>
