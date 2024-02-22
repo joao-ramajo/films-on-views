@@ -28,7 +28,8 @@ aside::before {
 }
 aside .subtitulo {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Namdhinggo", serif;
+  font-weight: 700;
   font-size: 2.5rem;
   color: white;
   margin-top: 50px;
@@ -48,7 +49,7 @@ aside .container .trailer {
   border-radius: 20px;
 }
 aside .container .trailer:hover {
-  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 aside .container .trailer .video {
   position: absolute;
