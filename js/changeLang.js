@@ -15,7 +15,7 @@ const elements=[
 
 const dataPT = {
     autor : '<a href="https://pt.wikipedia.org/wiki/Hayao_Miyazaki" target="_BLANK">HAYAO MIYAZAKI</a>',
-    titulo : 'A VIAGEM DE CHIHIRO',
+    titulo : 'A Viagem de Chihiro',
     paragrafo : 'Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.',
     btn1 : 'Assistir agora',
     btn2 : 'Assista o trailer',
@@ -36,11 +36,11 @@ ptBR.addEventListener('click', ()=>{
 })
 
 const dataEN ={
-    autor: '<a href="https://en.wikipedia.org/wiki/Hayao_Miyazaki" target="_blank">Hayao Miyazaki</a>',
-    titulo: 'A Viagem de Chihiro',
-    paragrafo: 'Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.',
-    btn1: 'Assistir agora',
-    btn2: 'Assista o trailer',
+    autor: '<a href="https://en.wikipedia.org/wiki/Hayao_Miyazaki">Hayao Miyazaki</a>',
+    titulo: 'Spirited Away',
+    paragrafo: 'Chihiro arrives in a magical world ruled by a witch. Those who disobey are turned into animals.',
+    btn1: 'Watch Now',
+    btn2: 'Watch the Trailer',
     trailer: 'Trailer'
 }
 

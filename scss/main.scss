@@ -179,6 +179,10 @@ header
             p{
                 font-size: 1.4rem;
             }
+
+        
+           
+  
         }
 
         .info__bottom{
@@ -213,6 +217,19 @@ header
                 }
             }
         }
+
+        .audioContainer{
+            // background-color: red;
+            margin: 20px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .controlAudio{
+                width: 90%;
+
+            }
+        }
     }
     
     .thumbnail{
@@ -229,12 +246,35 @@ header
             opacity: 0.5;
             &:hover{
                 filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+                
                 opacity: 0.9;
             }
         }
     }
 }
 
+
+@keyframes scary{
+    0%{
+        transform: translateX(5px); 
+    }
+
+    25%{
+        transform: translateX(-5px);
+    }
+
+    50%{
+        transform: translateX(5px);
+    }
+
+    75%{
+        transform: translateX(-5px);
+    }
+
+    100%{
+        transform: translateX(5px);
+    }
+}
 
 
 @keyframes ghost{

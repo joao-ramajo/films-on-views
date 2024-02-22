@@ -45,10 +45,20 @@
                 <h1 id="titulo">A VIAGEM DE CHIHIRO</h1>
                 <div class="info__body">
                     <p id="paragrafo">Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
+                   
                 </div>
                 <div class="info__bottom">
                     <div class="btn" id="a1">Assistir agora</div>
                     <a href="#trailer" style="text-decoration: none;" id="a2" class="btn" >Assista o trailer</a>
+
+                    
+                </div>
+                <div class="audioContainer">
+                    <audio id="audio" class="controlAudio" autoplay volume="0" controls>
+                        <source  src="audio/spiritaway.mp3" type="audio/mp3">
+                        <!-- Fallback para navegadores que não suportam a tag audio -->
+                        Seu navegador não suporta a tag de áudio.
+                    </audio>
                 </div>
             </div>
             <div class="thumbnail">
@@ -66,7 +76,15 @@
         </div>
     </aside>
 
-   
+    <script>
+        var meuAudio = document.getElementById('audio');
+        document.addEventListener('DOMContentLoaded', ()=>{
+            
+            meuAudio.volume = 0.05;
+            meuAduio.autoplay = true;
+        })
+
+    </script>
     <script src="js/links.js"></script>
     <script src="js/changeLang.js"></script>
 </body>
