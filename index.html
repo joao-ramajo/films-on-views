@@ -77,12 +77,19 @@
     </aside>
 
     <script>
-        var meuAudio = document.getElementById('audio');
-        document.addEventListener('DOMContentLoaded', ()=>{
-            
+       var meuAudio = document.getElementById('audio');
+
+        document.addEventListener('DOMContentLoaded', () => {
             meuAudio.volume = 0.05;
-            meuAudio.autoplay = true;
-        })
+
+            // Tente reproduzir o áudio diretamente
+            meuAudio.play().then(() => {
+                // A reprodução foi bem-sucedida
+            }).catch((error) => {
+                // A reprodução foi bloqueada (pode exigir interação do usuário)
+                console.error('Erro ao reproduzir áudio:', error);
+            });
+        });
 
     </script>
     <script src="js/links.js"></script>
