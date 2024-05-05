@@ -309,8 +309,15 @@ header nav img:hover {
     padding-top: 10px;
   }
   header .changeLang {
+    background-color: blue;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     height: 30%;
     margin: 20px 0px;
+  }
+  header .changeLang .changeLang span {
+    color: red !important;
   }
   header nav {
     height: 20%;
