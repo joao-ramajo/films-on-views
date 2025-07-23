@@ -74,8 +74,5 @@ O projeto "FilmsOnViews" é uma plataforma de exibição de filmes que apresenta
 
 ---
 
-## Contribuições
 
-- Para contribuir com o projeto, faça um fork deste repositório e envie um pull request com as alterações desejadas.
-- Verifique se o código está bem formatado e segue as boas práticas antes de enviar o pull request.
 
