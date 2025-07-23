@@ -1,9 +1,6 @@
 
 # FilmsOnViews
 
-**Desenvolvido por**: LacamJC
-
----
 
 ## Descrição
 
